@@ -10,16 +10,16 @@
     </head>
 
     <body>
-        <form id="login-form">
+        <form id="login-form"> <!-- form 태그는 submit 버튼을 누르면 새로고침이 일어나는 기본 동작이 있음 -->
             <input
                 required
                 maxlength="15"
                 type="text"
-                placeholder="What is your name?" />
-            <button>Log In</button>
+                placeholder="What is your name?" /> <!-- required: input이 비어있으면 submit이 안되도록 하는 속성, maxlength: 글자 수 제한 -->
+            <input type="submit" value="Log In" /> <!-- submit 버튼을 누르면 form 태그의 기본 동작이 일어남 -->
         </form>
-
-        <script src="app.js"></script>
+        <h1 id="greeting"></h1> <!-- h1 태그는 기본적으로 block 요소이므로, form 태그와 겹치지 않음 -->
+        <script src="app.js"></script> <!-- script 태그는 body 태그의 마지막에 넣는 것이 좋음. 그래야 html이 다 로딩된 후에 js가 실행됨 -->
     </body>
 
 </html>
